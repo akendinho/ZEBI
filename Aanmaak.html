@@ -1,0 +1,74 @@
+<script>
+    function Tekens(input){
+        var regex = /[^a-z]/gi;
+        input.value = input.value.replace(regex, "");
+    }
+
+
+</script>
+
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Student toevoegen</title>
+    <link rel="stylesheet" type="text/css" href="garage.css">
+</head>
+<body>
+<nav>
+    <h1>Student toevoegen</h1>
+<ul>
+    <li> <a href="Aanmaak.html">Voeg een student toe aan een keuzedeel</a> </li>
+    <li> <a href="Keuzedelenlijst.php">Keuzdelenlijst</a> </li>
+    <li> <a href="update.html">Bewerk de gegevens van een student.</a> </li>
+    <li> <a href="verwijder.html">Verwijder een student.</a> </li>
+</ul>
+</nav>
+<!--Maakt verbinding met het php bestand en stuurt alle gegevens die hier in zitten door-->
+<form action="Aanmaak.php" method="POST">
+
+    Naam:     <input type="text" name="Naam" onkeyup="Tekens(this)" required>       <br>
+    Opleiding:    <select type="text" name="Opleiding">  
+         
+    <option value="Softwarer developer">Softwarer developer</option>
+    <option value="Allround medewerker IT systems and devices">Allround medewerker IT systems and devices</option>
+    <option value="Expert IT and devices">Expert IT and devices</option>
+    
+                </select>
+<br><br>
+
+    Keuze1: <select name="Keuze1"> 
+
+    <option value="Microcontrollers">Microcontrollers</option>
+    <option value="Frontend">Frontend</option>
+    <option value="Mobile apps">Mobile apps</option>
+    <option value="HBO Wiskunde">HBO Wiskunde</option>
+
+
+    </select>   <br><br>
+    Keuze2: <select name="Keuze2"> 
+
+        <option value="Microcontrollers">Microcontrollers</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Mobile apps">Mobile apps</option>
+        <option value="HBO Wiskunde">HBO Wiskunde</option>
+    
+    
+        </select>   <br><br>
+        Keuze3: <select name="Keuze3"> 
+
+            <option value="Microcontrollers">Microcontrollers</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Mobile apps">Mobile apps</option>
+            <option value="HBO Wiskunde">HBO Wiskunde</option>
+        
+        
+            </select>   <br><br>
+    Schoolmail:   <input type="email" name="Schoolmail" required>     <br>
+    <input value="Oke" type="submit">
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="garage.css">
+
+    <title>Student Verwijderen</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport">
+
+</head>
+
+<body>
+    <nav>
+        <h1>Student verwijderen</h1>
+    <ul>
+        <li> <a href="Aanmaak.html">Voeg een student toe aan een keuzedeel</a> </li>
+        <li> <a href="Keuzedelenlijst.php">Keuzdelenlijst</a> </li>
+        <li> <a href="update.html">Bewerk de gegevens van een student.</a> </li>
+        <li> <a href="verwijder.html">Verwijder een student.</a> </li>
+    </ul>
+    </nav>
+    
+<form action="verwijder.php" method="post">
+
+    Schoolemail invoeren <input type="email" name="Namen" required><br><br>
+<!--Vraagt om extra bevestiging-->
+
+    <input onclick="functie1()" type="submit" name="delete" value="Verwijderen">
+    <script>
+        function functie1() {
+            confirm("Weet u zeker dat u deze student wilt verwijderen?");
+        }
+    </script>
+
+</form>
+
+</body>
+
+</html>

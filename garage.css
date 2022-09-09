@@ -1,0 +1,68 @@
+/* Hier komt de styling van de website */
+
+body{
+    background-color: white;
+
+}
+nav{
+    background-color: #b99470;
+    height: 150px;
+    color: white;
+    font-family: "Tw Cen MT";
+
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+h1{
+   font-family: "Tw Cen MT";
+    text-align: center;
+    font-size: 50px;
+
+}
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 2px solid white;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #202020;
+    color: white;
+    font-family: "Tw Cen MT";
+}
+input{
+    display:block;
+    width: 80%;
+    border:2px solid white;
+    padding: 0.5rem;
+    font-size: 15px;
+    border-radius:5px;
+}
+table {
+    margin: auto;
+    font-size: 18px;
+	color: black;
+    margin-top: 300px;
+}
+.read{
+    margin-top: 100px;
+}
+td{
+	color: black;
+    margin-top: 300px;
+}

@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Update de gegevens van de student</title>
+    <link rel="stylesheet" type="text/css" href="garage.css">
+</head>
+<body>
+    <nav>
+        <h1>Update de gegevens van een student</h1>
+         <ul>
+             <li> <a href="Aanmaak.html">Voeg een student toe aan een keuzedeel</a> </li>
+             <li> <a href="Keuzedelenlijst.php">Keuzdelenlijst</a> </li>
+             <li> <a href="update.html">Bewerk de gegevens van een student.</a> </li>
+             <li> <a href="verwijder.html">Verwijder een student.</a> </li>
+         </ul>
+        
+        
+        </nav>
+        <!--Stuurt de gegevens door naar het PHP bestand-->
+<form action="update.php" method="POST">
+
+   Voer je schoolmail in als je iets wilt wijzigen.   <input type="email" name="namen" onkeyup="Tekens(this)" required>       <br>
+
+    <input value="Oke " type="submit" >
+
+</form>
+
+</body>
+
+</html>
